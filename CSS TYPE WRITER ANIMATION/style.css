@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+h1 {
+    color: hsl(0, 0%, 50%);
+    font-family: 'Anonymous Pro', monospace;
+    letter-spacing: 3px;
+    font-size: 30px;
+    cursor: pointer;
+    border-right: 2px solid white;
+    animation: typing 7s steps(60) infinite,
+               blinkCursor 0.5s infinite linear;
+    white-space: nowrap;
+    overflow: hidden;
+}
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 1014.92px;
+    }
+}
+@keyframes blinkCursor {
+    from {
+        border-right-color: white;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
