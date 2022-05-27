@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+h1 {
+    color: hsl(0, 0%, 50%);
+    font-family: monospace;
+    letter-spacing: 3px;
+    font-size: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: linear-gradient(
+        to right,
+        hsl(0, 0%, 30%) 0,
+        white 10%,
+        hsl(0, 0%, 30%) 20%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+}
+@keyframes shine {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: 487.33px;
+    }
+}
