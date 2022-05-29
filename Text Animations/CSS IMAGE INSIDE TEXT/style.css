@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    min-height: 100vh;
+    font-family: "Ubuntu";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    background: url("./BLM2.jpg");
+    background-size: 40%;
+    font-size: 150px;
+    color: transparent;
+    padding: 10px;
+    -webkit-background-clip: text;
+    animation: zoomOut 20s ease-in-out 0.5s forwards infinite;
+}
+@keyframes zoomOut {
+    0% {
+        background-size: 40%;
+    }
+    50% {
+        background-size: 10%;
+    }
+    100% {
+        background-size: 40%;
+    }
+}
