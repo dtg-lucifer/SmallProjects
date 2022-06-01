@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  background-color: #303030;
+  padding: 7px 13px;
+  -webkit-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+
+.btn:hover {
+  background-color: #030303;
+}
+
+#navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 7rem;
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  background: black;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), to(rgba(119, 175, 239, 0.45)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(119, 175, 239, 0.45) 100%);
+}
+
+#navBar #left__title {
+  margin-left: 20px;
+  position: relative;
+  color: black;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  inset: 0;
+}
+
+#navBar #left__title::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 4px;
+  width: 0;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  background-color: white;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+#navBar #left__title:hover {
+  color: white;
+}
+
+#navBar #left__title:hover::after {
+  width: 100%;
+}
+
+#navBar .btn {
+  margin-right: 20px;
+  -webkit-transition: -webkit-box-shadow 0.25s ease;
+  transition: -webkit-box-shadow 0.25s ease;
+  transition: box-shadow 0.25s ease;
+  transition: box-shadow 0.25s ease, -webkit-box-shadow 0.25s ease;
+}
+
+#navBar .btn:hover {
+  -webkit-box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.2);
+}
+
+.container__main {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container__main img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  z-index: 0;
+}
+
+.container__main .main__title {
+  position: absolute;
+  z-index: 5;
+  font-size: 50px;
+  margin-top: 55%;
+  color: white;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  background-position-x: -100px;
+}
+
+.container__main .main__title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  height: 5px;
+  width: 150%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  background-color: #030303;
+  -webkit-transition: -webkit-transform 0.25s ease;
+  transition: -webkit-transform 0.25s ease;
+  transition: transform 0.25s ease;
+  transition: transform 0.25s ease, -webkit-transform 0.25s ease;
+}
+
+.container__main .main__title::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  right: -50%;
+  height: 5px;
+  width: 150%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  background-color: #030303;
+  -webkit-transition: -webkit-transform 0.25s ease;
+  transition: -webkit-transform 0.25s ease;
+  transition: transform 0.25s ease;
+  transition: transform 0.25s ease, -webkit-transform 0.25s ease;
+}
+
+.container__main .main__title:hover {
+  background-position-x: initial;
+}
+
+.container__main .main__title:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.container__main .main__title:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
