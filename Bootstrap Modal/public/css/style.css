@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0 0 0 / .2);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.btn {
+    border: none !important;
+}
+
+.btn-primary {
+    background-color: #f36e1e !important;
+}
+
+.btn-primary:hover {
+    background-color: #c15919 !important;
+}
+
+.active {
+    background-color: #f36e1e !important;
+    border: none !important;
+}
+
+.active:hover {
+    background-color: #c15919 !important;
+}
+
+.main__wrapper { 
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem;
+}
+
+.main__wrapper > section > button.btn { 
+    padding: 5px 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#signInModalLabel {
+    font-weight: bolder;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.main__form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main__form form .form__fields {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.main__form form .form__fields label {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.main__form form .form__fields label:not([for="username"])::after {
+    content: "*";
+}
+
+.main__form form .form__fields input {
+    width: 100%;
+    font-size: 12px;
+    padding: 5px 15px;
+    outline: none;
+    border: 1px solid #f36e1e;
+    border-radius: 3px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.socials span {
+    background-color: #f36e1e;
+    color: white;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.social__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    cursor: pointer;
+}
+
+.social__wrapper i {
+    font-size: 20px;
+}
+
+.hidden {
+    display: none !important;
+}
